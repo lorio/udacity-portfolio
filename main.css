@@ -1,0 +1,172 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1.6 'Montserrat', sans-serif;
+  color: #2d3c49;
+  background-color: #f9f9f9;
+}
+
+header, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display:flex;
+  
+  width: 80%;
+  margin: 0 auto;
+}
+
+/******header******/
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 1.5em;
+  letter-spacing: .04em;
+  order: 0;
+}
+
+.header-inner {
+  border-bottom: 3px solid #7d97ad ;
+  display: flex;
+  flex-wrap:wrap;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  clip-path: circle(50px at center);
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  font-family: 'Scope One', serif;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.title h1 {
+  display: block;
+  margin-bottom: 0;
+}
+
+.title p {
+  display: flex;
+  margin:0 auto;
+}
+
+/******main******/
+
+.main {
+  display:flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 80%;
+  order: 2;
+  justify-content: flex-end;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  order: 3;
+  justify-content: space-between;
+}
+
+.projects li {
+  width: 33.33%;
+  display: flex;
+}
+
+.projects figure {
+  margin: 30px 0 0;
+}
+
+.projects a {
+  color: #7d97ad;
+  text-decoration: none;
+}
+
+
+.projects img {
+  width: 90%;
+}
+
+/******aside******/
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 20%;
+  order: 1;
+}
+
+.swatches li {
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 40px;
+  color: #7d97ad;
+  font-size: 1.1em;
+}
+
+.box1 {
+  background-color: #02b3e4;
+}
+.box1::after {
+  display: block;
+  padding-top: 60px;
+  content: "#02b3e4";  
+  margin-left: -.8em;
+}
+
+.box2 {
+  background-color: #2d3c49;
+}
+.box2::after {
+  display: block;
+  padding-top: 60px;
+  content: "#2d3c49";
+  margin-left: -.8em;
+}
+
+.box3 {
+  background-color: #7d97ad;
+}
+.box3::after {
+  display: block;
+  padding-top: 60px;
+  content: "#7d97ad";
+  margin-left: -.8em;
+}
