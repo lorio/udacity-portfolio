@@ -21,9 +21,6 @@
   ul.projects li {
     width: 60%;
   }
-  /*aside {
-    order: 4;
-  }*/
 }
 @media screen and (max-width: 769px) {
   .container {
@@ -44,9 +41,6 @@
     flex-direction: column;
     flex-grow: 1;
   }
-  /*.header-inner {
-    margin-right: 15px;
-  }*/
   .hero {
     /*position: absolute;*/
     flex-flow: row wrap;
