@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="apple-touch-icon" href="favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Lori Ortiz</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Scope+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/responsive.css">
 </head>
@@ -15,20 +16,20 @@
       <img src="images/me.svg" srcset="images/me.gif" alt="portrait" class="logo">
       <div class="title">
         <h1>Lori Ortiz</h1>
-        <p>Front-End Developer, New York, NY</p>
+        <p>Front-End Developer, NYC</p>
       </div>
     </div>
   </header>
     <div class="container">
       <section class="main">
           <div class="hero">
-            <div class="inner"></div>
+            <div class="inner" aria-label="image of skyline"></div>
             <!-- <img src="images/hero.jpg" alt="new york skyline"> -->
           </div>
           <ul class="projects">
-            <li><a href="https://sheltered-coast-61465.herokuapp.com/">
+            <li><a href="https://sheltered-coast-61465.herokuapp.com/" aria-label="link to project">
               <figure><img src="images/map1.jpg" alt="map app">
-                <figcaption>React app <span class="icon"></span></figcaption>
+                <figcaption>React app <span class="icon" aria-hidden="true"></span></figcaption>
               </figure></a>
             </li>
             <li><a href="#">
@@ -41,28 +42,35 @@
                 <figcaption>Javascript app</figcaption>
               </figure></a>
             </li>
-            <li><a href="http://frankmann.com">
+            <li><a href="http://frankmann.com" aria-label="link to project">
               <figure><img src="images/frank.jpg" alt="website">
-                <figcaption>HTML CSS <span class="icon"></span></figcaption>
+                <figcaption>HTML CSS <span class="icon" aria-hidden="true"></span></figcaption>
               </figure></a>
             </li>
-            <li><a href="http://hillarykeel.com">
+            <li><a href="http://hillarykeel.com" aria-label="link to project">
               <figure><img src="images/hill.jpg" alt="website">
-                <figcaption>Rails/Gatsby-React <span class="icon"></span></figcaption>
+                <figcaption>Rails/Gatsby-React <span class="icon" aria-hidden="true"></span></figcaption>
               </figure></a>
             </li>
-            <li><a href="http://foodythegoak.com">
+            <li><a href="http://foodythegoak.com" aria-label="link to project">
               <figure><img src="images/foody.jpg" alt="website">
-                <figcaption>Rails app <span class="icon"></span></figcaption>
+                <figcaption>Rails app <span class="icon" aria-hidden="true"></span></figcaption>
               </figure></a>
             </li>
           </ul>
         </section>    
       <aside>
-        <ul class="swatches">
-          <li class="box1"></li>
-          <li class="box2"></li>
-          <li class="box3"></li>
+        <ul class="socials">
+          <li><a href=http://twitter.com/LoriNYNY> <i class="fa fa-twitter fa-3x" aria-label="twitter"></i> </a></li>
+          <li>
+            <a href=http://github.com/lorio> <i class="fa fa-github fa-3x" aria-label="github"></i> </a>
+          </li>
+          <li>
+            <a href=http://linkedin.com/in/loriortiz> <i class="fa fa-linkedin-square fa-3x" aria-label="Linked In"></i> </a>
+          </li>
+          <li>
+               <a href=http://lorio.github.io/blog> <i class="fa fa-lightbulb-o fa-3x" aria-label="blog"></i> </a> 
+          </li>
         </ul>
       </aside>
     </div>
