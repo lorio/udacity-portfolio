@@ -23,7 +23,7 @@ ul {
 
 .container {
   display:flex;
-  
+  max-width: 1880px;
   width: 80%;
   margin: 0 auto;
 }
@@ -32,7 +32,7 @@ ul {
 
 header {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -45,7 +45,7 @@ header {
   border-bottom: 3px solid #7d97ad ;
   display: flex;
   flex-wrap:wrap;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,6 +66,7 @@ header {
 
 .title h1 {
   display: block;
+  text-align: right;
   margin-bottom: 0;
 }
 
@@ -79,33 +80,84 @@ header {
 .main {
   display:flex;
   position: relative;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flow: column nowrap;
+  order: 2;
+  /*flex-direction: column;
+  
   width: 80%;
   order: 2;
   justify-content: flex-end;
 }
+/*.hero:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: (281 / 700) * 100%;*/
+  
+  }
+  .hero {
+    position: relative;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+  }
+ /* .hero-wrapper {
+    width: fit-content;
+    position: relative;
+    flex-flow: row wrap;
+    order: 1;
+  }*/
+  .hero > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position:center center;
+    background: no-repeat url("../images/hero.jpg");
+  }
+  /*@media screen and (max-width: 769px) {
+    .hero {
+    position: relative;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    }
+    .hero > .inner {
+    background: no-repeat url("../images/hero_m.jpg");
+    }
+  }*/
 
-.hero {
+/*.hero {
   position: relative;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
+  background: no-repeat 100% url("../images/hero.jpg");
+  justify-content: center; 
 }
 
 .hero img {
   width: 100%;
-}
+}*/
 
 .projects {
+  margin-top: 1em;
   display: flex;
-  flex-wrap: wrap;
-  order: 3;
+  flex-flow: row wrap;
+  order: 2;
+  
   justify-content: space-between;
+  
 }
 
-.projects li {
+.projects ul li {
+  display: inline-block;
   width: 33.33%;
-  display: flex;
+  /*display: flex;*/
+  margin-bottom: 0.5em;
 }
 
 .projects figure {
@@ -113,14 +165,34 @@ header {
 }
 
 .projects a {
-  color: #7d97ad;
+  color: #2d3649;
   text-decoration: none;
 }
-
+.projects a:hover {
+  color: #7d97ad;
+}
 
 .projects img {
-  width: 90%;
+  width: 100%;
 }
+
+.projects figcaption span.icon {
+  background: no-repeat url(../images/ext-link.svg);
+  height: 18px;
+  width: 18px;
+}
+.icon {
+    display: inline-flex;
+    align-self: center;
+}
+
+.icon svg, .icon img {
+    height: 1em;
+    width: 1em;
+    position: relative;
+    fill: #7d97ad;
+}
+
 
 /******aside******/
 
