@@ -1,4 +1,4 @@
-@font-face{font-family:'FontAwesome';src:url("../fonts/fontawesome-webfont.eot?v=4.0.3");src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");font-weight:400;font-style:normal}.fa{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-3x{font-size:3em}.fa-twitter-square:before{content:"\f081"}.fa-facebook-square:before{content:"\f082"}.fa-linkedin-square:before{content:"\f08c"}.fa-external-link:before{content:"\f08e"}.fa-github-square:before{content:"\f092"}.fa-twitter:before{content:"\f099"}.fa-facebook:before{content:"\f09a"}.fa-github:before{content:"\f09b"}.fa-linkedin:before{content:"\f0e1"}.fa-lightbulb-o:before{content:"\f0eb"}
+@font-face{font-family:'FontAwesome';src:url("../fonts/fontawesome-webfont.eot?v=4.0.3");src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");font-weight:400;font-style:normal}.fa{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-3x{font-size:3em}.fa-twitter-square:before{content:"\f081"}.fa-facebook-square:before{content:"\f082"}.fa-linkedin-square:before{content:"\f08c"}.fa-external-link:before{content:"\f08e"}.fa-github-square:before{content:"\f092"}.fa-twitter:before{content:"\f099"}.fa-facebook:before{content:"\f09a"}.fa-github:before{content:"\f09b"}.fa-linkedin:before{content:"\f0e1"}.fa-file-pdf-o:before{content:"\f1c1"}
 html, body {
   width: 100%;
   height: 100%;
@@ -43,7 +43,7 @@ header {
 }
 
 .header-inner {
-  border-bottom: 3px solid #7d97ad ;
+  border-bottom: 3px solid #2d3c49;
   display: flex;
   flex-wrap:wrap;
   width: 100%;
@@ -170,26 +170,31 @@ aside {
   /*height: 60px;
   width: 60px;*/
   margin-bottom: 40px;
-  /*color: #7d97ad;
-  font-size: 1.1em;*/
+  color: #2d3c49;
+  font-size: 1.1em;
 }
+ul.socials li:last-child {
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+
 .socials a i {
     padding: 0 .4em;
-    color: #659abd
+    color: #2d3c49;
 }
 
 .socials a i:visited {
-    color: #6ea7e2
+    color: #56626D;
 }
 
 .socials a i:focus {
-    color: #6ea7e2
+    color: #969da4;
 }
 
 .socials a i:hover {
-    color: #8abce7
+    color: #969da4;
 }
 
 .socials a i:active {
-    color: #8abce7
+    color: #969da4;
 }

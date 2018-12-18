@@ -22,6 +22,16 @@
     width: 60%;
   }
 }
+@media screen and (min-width: 770px) {
+  ul.socials li:last-child {
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+  ul.socials li:last-child::after {
+    content: "resume";
+    padding-left: 25px;
+  }
+}
 @media screen and (max-width: 769px) {
   .container {
     flex-flow: column wrap;
